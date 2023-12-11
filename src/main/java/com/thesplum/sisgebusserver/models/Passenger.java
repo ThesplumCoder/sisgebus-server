@@ -33,10 +33,10 @@ public class Passenger {
   @Column(name = "bus_tickets")
   private int busTickets;
 
-  @OneToMany(mappedBy = "passenger_id")
+  @OneToMany(mappedBy = "passenger")
   private List<Card> cards;
 
-  @OneToMany(mappedBy = "passenger_id")
+  @OneToMany(mappedBy = "passenger")
   private List<PaymentMethod> paymentMethods;
 
   /**
